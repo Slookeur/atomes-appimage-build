@@ -83,10 +83,10 @@ make install DESTDIR=$PWD"/AppDir"
 wget https://github.com/Slookeur/Atomes-appimage-build/blob/main/atomes-AppImageBuilder.yml
 ```
 
-- Finally build the appimage using the `appbuilder` tool
+- Finally build the appimage using the `appimage-builder` tool
 
 ```
-appbuilder --recipe ./atomes-AppImageBuilder.yml
+appimage-builder --recipe ./atomes-AppImageBuilder.yml
 ```
 
 ## Running the Appimage
