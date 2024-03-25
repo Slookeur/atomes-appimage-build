@@ -71,7 +71,7 @@ cd ./Atomes-*
 mkdir AppDir
 ```
 
-- Install the newly built atomes in the new `AppDir` directory
+- Install the newly built atomes package in the new `AppDir` directory
 
 ```
 make install DESTDIR=$PWD"/AppDir"
@@ -80,7 +80,7 @@ make install DESTDIR=$PWD"/AppDir"
 - Download the recipies to build atomes appimage:
 
 ```
-wget https://github.com/Slookeur/Atomes-appimage-build/
+wget https://github.com/Slookeur/Atomes-appimage-build/blob/main/atomes-AppImageBuilder.yml
 ```
 
 - Finally build the appimage using the `appbuilder` tool
