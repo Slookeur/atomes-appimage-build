@@ -9,18 +9,22 @@ AppDir:
     version: 1.1.14
     exec: usr/bin/atomes
     exec_args: $@
-  files:
+  apt:
+    arch: amd64
+    sources:
+     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] http://deb.debian.org/debian bookworm-backports main'
+     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] http://deb.debian.org/debian bookworm main'
     include:
-    - /lib64/ld-linux-x86-64.so.2
-    - gtk+-3.0
-    - libxml-2.0
-    - pangoft2
-    - glu
-    - epoxy
-    - libavutils
-    - libavcodec
-    - libavformat
-    - libswscale
+      - libgtk-3-0
+      - libxml2
+      - libpangoft2-1.0-0
+      - libglu1-mesa
+      - libepoxy0
+      - libavutil57
+      - libavcodec59
+      - libavformat59
+      - libswscale6
+  files:
     exclude:
     - usr/share/man
     - usr/share/doc/*/README.*
