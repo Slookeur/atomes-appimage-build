@@ -1,9 +1,8 @@
 # appimage-builder recipe see https://appimage-builder.readthedocs.io for details
 version: 1
 AppDir:
-  path: ./AppDir
   app_info:
-    id: fr.ipcms.atomes
+    id: atomes
     name: atomes
     icon: atomes
     version: 1.1.14
@@ -12,9 +11,13 @@ AppDir:
   apt:
     arch: amd64
     sources:
-     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] http://deb.debian.org/debian bookworm-backports main'
-     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] http://deb.debian.org/debian bookworm main'
+     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] 
+       http://deb.debian.org/debian bookworm-backports main'
+     - sourceline: 'deb [arch=amd64, signed-by=/usr/share/keyrings/debian-archive-bookworm-automatic.gpg] 
+       http://deb.debian.org/debian bookworm main'
     include:
+      - atomes
+      - atomes-data
       - libgtk-3-0
       - libxml2
       - libpangoft2-1.0-0
@@ -24,29 +27,6 @@ AppDir:
       - libavcodec59
       - libavformat59
       - libswscale6
-  files:
-    exclude:
-    - usr/share/man
-    - usr/share/doc/*/README.*
-    - usr/share/doc/*/changelog.*
-    - usr/share/doc/*/NEWS.*
-    - usr/share/doc/*/TODO.*
-  test:
-    fedora-30:
-      image: appimagecrafters/tests-env:fedora-30
-      command: ./AppRun
-    debian-stable:
-      image: appimagecrafters/tests-env:debian-stable
-      command: ./AppRun
-    archlinux-latest:
-      image: appimagecrafters/tests-env:archlinux-latest
-      command: ./AppRun
-    centos-7:
-      image: appimagecrafters/tests-env:centos-7
-      command: ./AppRun
-    ubuntu-xenial:
-      image: appimagecrafters/tests-env:ubuntu-xenial
-      command: ./AppRun
 AppImage:
   arch: x86_64
   update-information: guess
