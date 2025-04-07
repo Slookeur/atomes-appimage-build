@@ -8,9 +8,9 @@ cd atomes-appimage
 BUILD=1
 
 if [ $BUILD -eq 1 ]; then
-  wget https://github.com/Slookeur/Atomes-GNU/archive/refs/tags/v$VERSION.tar.gz
+  wget https://github.com/Slookeur/atomes-GNU/archive/refs/tags/v$VERSION.tar.gz
   tar -zxf v$VERSION.tar.gz
-  mv Atomes-GNU-$VERSION atomes-$VERSION
+  mv atomes-GNU-$VERSION atomes-$VERSION
   cd atomes-$VERSION 
   cp ../../atomes-appimage-build/atomes-AppImageBuilder.yml .
   mkdir AppDir

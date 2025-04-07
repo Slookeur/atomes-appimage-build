@@ -1,19 +1,19 @@
-# Atomes
+# atomes
 
-![](https://github.com/Slookeur/Atomes.io/workflows/ns/badge.svg)
-![](https://www.codefactor.io/repository/github/Slookeur/Atomes/badge)
+![](https://github.com/Slookeur/atomes.io/workflows/ns/badge.svg)
+![](https://www.codefactor.io/repository/github/Slookeur/atomes/badge)
 
-[Atomes][atomes] is a Free (Open Source) cross-platform toolbox developed to analyze, to visualize and to edit/create three-dimensional atomistic models.
+[atomes][atomes] is a Free (Open Source) cross-platform toolbox developed to analyze, to visualize and to edit/create three-dimensional atomistic models.
 It oﬀers a workspace that allows to have many projects opened simultaneously.
 
 The different projects in the workspace can exchange data: analysis results, atomic coordinates ...
-Atomes also provides an advanced input preparation system for further calculations using well known molecular dynamics codes:
+atomes also provides an advanced input preparation system for further calculations using well known molecular dynamics codes:
 
 - Classical MD : [DLPOLY][dlpoly] and [LAMMPS][lammps]
 - ab-initio MD : [CPMD][cpmd] and [CP2K][cp2k]
 - QM-MM MD : [CPMD][cpmd] and [CP2K][cp2k]
 
-To prepare the input ﬁlles for these calculations is likely to be the key, and most complicated step towards MD simulations. Atomes offers a user-friendly assistant to help and guide the user step by step to achieve this crucial step.
+To prepare the input ﬁlles for these calculations is likely to be the key, and most complicated step towards MD simulations. atomes offers a user-friendly assistant to help and guide the user step by step to achieve this crucial step.
 Features
 
 
@@ -27,10 +27,10 @@ Features
 	- ab-initio MD: [CPMD][cpmd] and [CP2K][cp2k]
 	- QM-MM MD: [CPMD][cpmd] and [CP2K][cp2k]
 
-## Who's behind ***Atomes***
+## Who's behind ***atomes***
 
 
-***Atomes*** is developed by [Dr. Sébastien Le Roux][slr], research engineer for the [CNRS][cnrs]
+***atomes*** is developed by [Dr. Sébastien Le Roux][slr], research engineer for the [CNRS][cnrs]
 
 <p align="center">
   <a href="https://www.cnrs.fr/"><img width="100" src="https://www.cnrs.fr/themes/custom/cnrs/logo.svg" alt="CNRS logo" align="center"></a>
@@ -50,7 +50,7 @@ Features
 
 ```
 VERSION="1.1.14"
-wget https://github.com/Slookeur/Atomes-GNU/archive/refs/tags/v$VERSION.tar.gz
+wget https://github.com/Slookeur/atomes-GNU/archive/refs/tags/v$VERSION.tar.gz
 ```
 
 - Install the `appimage-builder tool`
@@ -61,7 +61,7 @@ https://appimage-builder.readthedocs.io/en/latest/intro/install.html
 
 ```
 tar -jxf v*.tar.bz2
-cd ./Atomes-*
+cd ./atomes-*
 ./configure --prefix=/usr
 ```
 
@@ -80,7 +80,7 @@ make install DESTDIR=$PWD"/AppDir"
 - Download the recipies to build atomes appimage:
 
 ```
-wget https://github.com/Slookeur/Atomes-appimage-build/blob/main/atomes-AppImageBuilder.yml
+wget https://github.com/Slookeur/atomes-appimage-build/blob/main/atomes-AppImageBuilder.yml
 ```
 
 - Finally build the appimage using the `appimage-builder` tool
@@ -95,7 +95,7 @@ Simply double click on the appimage
 
 ## Documentation
 
-The documenation is hosted on [GitHub][github] here: [Atomes documentation][atomes-doc]
+The documenation is hosted on [GitHub][github] here: [atomes documentation][atomes-doc]
 
 [slr]:https://www.ipcms.fr/sebastien-le-roux/
 [cnrs]:https://www.cnrs.fr/
@@ -103,9 +103,9 @@ The documenation is hosted on [GitHub][github] here: [Atomes documentation][atom
 [github]:https://github.com/
 [jekyll]:https://jekyllrb.com/
 [atomes]:https://atomes.ipcms.fr/
-[atomes-rpm-build]:https://slookeur.github.io/Atomes-rpm-build/
-[atomes-doc]:https://slookeur.github.io/Atomes-doc/
-[atomes-tuto]:https://slookeur.github.io/Atomes-tuto/
+[atomes-rpm-build]:https://slookeur.github.io/atomes-rpm-build/
+[atomes-doc]:https://slookeur.github.io/atomes-doc/
+[atomes-tuto]:https://slookeur.github.io/atomes-tuto/
 [dlpoly]:https://www.scd.stfc.ac.uk/Pages/DL_POLY.aspx
 [lammps]:https://lammps.sandia.gov/
 [cpmd]:http://www.cpmd.org
