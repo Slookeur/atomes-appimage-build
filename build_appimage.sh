@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="1.1.14"
+VERSION="1.3.1"
 
 mkdir atomes-appimage
 cd atomes-appimage
