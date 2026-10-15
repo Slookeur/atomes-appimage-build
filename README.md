@@ -4,7 +4,7 @@
 ![](https://www.codefactor.io/repository/github/Slookeur/atomes/badge)
 
 [atomes][atomes] is a Free (Open Source) cross-platform software licensed under the terms of the Affero GPL v3+ license. 
-**atomes** is a toolbox developed to analyze, to visualize and to create/edit three-dimensional atomistic models.
+**atomes** is a toolbox developed to analyze, to visualize and to create/edit three-dimensional atomic scale models.
 It offers a workspace that allows to have many projects opened simultaneously.
 
 The different projects in the workspace can exchange data: analysis results, atomic coordinates ...

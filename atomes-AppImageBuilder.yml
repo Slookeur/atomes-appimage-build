@@ -5,7 +5,7 @@ AppDir:
     id: atomes
     name: atomes
     icon: atomes
-    version: 1.3.1
+    version: 1.3.2
     exec: usr/bin/atomes
     exec_args: $@
   apt:
